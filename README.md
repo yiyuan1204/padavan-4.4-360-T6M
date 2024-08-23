@@ -54,11 +54,11 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
     ```
   - Clone source code
     ```sh
-    git clone https://github.com/meisreallyba/padavan-4.4.git
+    git clone https://github.com/yiyuan1204/padavan-4.4-360-T6M.git
     ```
   - Prepare toolchain
     ```sh
-    cd padavan-4.4/toolchain-mipsel
+    cd padavan-4.4-360-T6M/toolchain-mipsel
 
     # (Recommend) Download prebuilt toolchain for x86_64 or aarch64 host
     ./dl_toolchain.sh
@@ -68,13 +68,13 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
     ```
   - Modify template file and start compiling
     ```sh
-    cd padavan-4.4/trunk
+    cd padavan-4.4-360-T6M/trunk
 
     # (Optional) Modify template file
-    # nano configs/templates/K2P.config
+    # nano configs/templates/360-T6M.config
 
     # Start compiling
-    fakeroot ./build_firmware_modify K2P
+    fakeroot ./build_firmware_modify 360-T6M
 
     # To build firmware for other devices, clean the tree after previous build
     ./clear_tree
